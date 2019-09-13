@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {View, TextInput, FlatList, Button} from 'react-native';
+import {
+  View,
+  TextInput,
+  FlatList,
+  Button,
+  Text,
+  TouchableOpacity,
+} from 'react-native';
 import styles from '../Style/Stylesheet';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import ListItem from '../Tools/customListItem';
@@ -13,11 +20,12 @@ export default class ExpenseBoardCreate extends Component {
     return {
       title: 'Gider Panosu Oluştur',
       headerLeft: (
-        <Icon.Button
-          name="chevron-left"
+        <Button
+          title="Vazgeç"
           backgroundColor="rgba(0, 0, 0, 0.0)"
           color="#000000"
-          onPress={() => navigation.navigate('Home')}></Icon.Button>
+          onPress={() => navigation.navigate('Home')}
+        />
       ),
     };
   };
@@ -26,12 +34,29 @@ export default class ExpenseBoardCreate extends Component {
     const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
-        <TextInput placeholder="Pano Adı" style={styles.textInput} />
-        <Button
-          title="Giderlere Ortak Ekle"
-          style={styles.button}
-          onPress={() => navigate('AddPartnerToBoard')}
-        />
+        <TextInput placeholder="Pano Adı" style={styles.textInputBoardName} />
+
+        <View
+          style={{
+            flex: 1,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%',
+          }}>
+          <Text style={styles.explanationText}>Panoya Ortak Ekle</Text>
+          <TouchableOpacity
+            onPress={() => navigate('AddPartnerToBoard')}
+            style={styles.circleButtonUserAdd}>
+            <Icon
+              name="user-plus"
+              backgroundColor="#fff"
+              title="plus"
+              color="#fff"
+              size={30}></Icon>
+          </TouchableOpacity>
+        </View>
+        <Text style={styles.explanationTitleText}>Ortaklar</Text>
         <View style={styles.ListContainer}>
           <FlatList
             data={[
@@ -49,13 +74,17 @@ export default class ExpenseBoardCreate extends Component {
             renderItem={({item}) => <ListItem title={item.key} />}
           />
         </View>
-        <View style={styles.button}>
-          <Button
-            title="Panoyu Oluştur"
-            color="#fff"
-            onPress={() => navigate('Home')}
-          />
-        </View>
+        <TouchableOpacity
+          onPress={() => navigate('Home')}
+          style={styles.circleButton}>
+          <Icon
+            name="check-circle"
+            backgroundColor="#fff"
+            title="plus"
+            color="#000"
+            size={70}
+            solid></Icon>
+        </TouchableOpacity>
       </View>
     );
   }

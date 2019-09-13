@@ -1,5 +1,15 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, TextInput, View, Button, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Button,
+  TouchableOpacity,
+  KeyboardAvoidingView,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import styles from '../Style/Stylesheet';
 
 export default class AddExpenseToBoard extends Component {
   constructor(props) {
@@ -23,7 +33,7 @@ export default class AddExpenseToBoard extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <View style={styles.explanationView}>
           <Text style={styles.explanationText}>Seçilen Panonun Adı</Text>
         </View>
@@ -38,17 +48,23 @@ export default class AddExpenseToBoard extends Component {
             Ekleme Yapıldıktan sonra pano totali: 0₺
           </Text>
         </View>
-        <Button
-          title="Gideri Ekle"
-          style={styles.button}
-          onPress={() => navigate('Home')}
-        />
-      </View>
+        <TouchableOpacity
+          onPress={() => navigate('Board')}
+          style={styles.circleButton}>
+          <Icon
+            name="check-circle"
+            backgroundColor="#fff"
+            title="plus"
+            color="#000"
+            size={70}
+            solid></Icon>
+        </TouchableOpacity>
+      </KeyboardAvoidingView>
     );
   }
 }
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -87,4 +103,4 @@ const styles = StyleSheet.create({
     flex: 4,
     flexDirection: 'row',
   },
-});
+});*/

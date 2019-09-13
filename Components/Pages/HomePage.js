@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Text, View, FlatList, Button, TouchableHighlight} from 'react-native';
-
+import {Text, View, FlatList, Button, TouchableOpacity} from 'react-native';
+import * as Progress from 'react-native-progress';
 import styles from '../Style/Stylesheet';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
@@ -29,40 +29,45 @@ export default class Home extends Component {
     const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
-        <View style={styles.explanationView}>
-          <Text style={styles.explanationText}>Panolorınız</Text>
-        </View>
+        <Text style={styles.explanationTitleText}>Panolorınız</Text>
         <View style={styles.ListContainer}>
           <FlatList
-            data={[
-              {key: 'Devin'},
-              {key: 'Dan'},
-              {key: 'Dominic'},
-              {key: 'Jackson'},
-              {key: 'James'},
-              {key: 'Joel'},
-              {key: 'John'},
-              {key: 'Jillian'},
-              {key: 'Jimmy'},
-              {key: 'Julie'},
-            ]}
+            data={[{key: 'Devin'}, {key: 'Dan'}, {key: 'Dominic'}]}
             renderItem={({item}) => (
-              <TouchableHighlight onPress={() => navigate('Board')}>
+              <TouchableOpacity onPress={() => navigate('Board')}>
                 <ListItem title={item.key} />
-              </TouchableHighlight>
+              </TouchableOpacity>
             )}
           />
         </View>
-        <View style={styles.explanationView}>
-          <Text style={styles.explanationText}>
-            Gider eklemek için panonuzu seçin yada yeni bir tane oluşturun.
-          </Text>
-        </View>
-        <Button
-          title="Pano Ekle"
-          style={styles.button}
+
+        <TouchableOpacity
           onPress={() => navigate('ExpenseBoardCreate')}
-        />
+          style={styles.circleButton}>
+          <Icon
+            name="plus-circle"
+            backgroundColor="#fff"
+            title="plus"
+            color="#000"
+            size={70}></Icon>
+        </TouchableOpacity>
+
+        <View
+          style={{
+            flexDirection: 'row',
+            backgroundColor: 'lightgray',
+            borderRadius: 4,
+            overflow: 'hidden',
+          }}>
+          <View
+            style={{
+              flex: 0.7,
+              height: 20,
+              backgroundColor: '#e74c3c',
+            }}
+          />
+          <View style={{flex: 1 - 0.7}} />
+        </View>
       </View>
     );
   }

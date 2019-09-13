@@ -1,5 +1,13 @@
 import React, {Component} from 'react';
-import {Text, TextInput, View, Button, Image} from 'react-native';
+import {
+  Text,
+  TextInput,
+  View,
+  Button,
+  Image,
+  KeyboardAvoidingView,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import styles from '../Style/Stylesheet';
 
 export default class LoginPage extends Component {
@@ -18,10 +26,15 @@ export default class LoginPage extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
+        <Icon size={160} color="#e74c3c" name="clipboard-check" solid></Icon>
         <Text style={styles.marka}>Ortak</Text>
         <TextInput placeholder="Email adresi" style={styles.textInput} />
-        <TextInput placeholder="Parola" style={styles.textInput} />
+        <TextInput
+          secureTextEntry={true}
+          placeholder="Parola"
+          style={styles.textInput}
+        />
         <Button
           title="Giriş Yap"
           style={styles.button}
@@ -33,7 +46,7 @@ export default class LoginPage extends Component {
             Kayıt Olun.
           </Text>{' '}
         </Text>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }

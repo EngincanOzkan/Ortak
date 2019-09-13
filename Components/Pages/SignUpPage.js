@@ -1,8 +1,29 @@
 import React, {Component} from 'react';
-import {Text, TextInput, View, Button, Image} from 'react-native';
+import {
+  Text,
+  TextInput,
+  View,
+  Button,
+  Image,
+  KeyboardAvoidingView,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import styles from '../Style/Stylesheet';
 
 export default class SignUp extends Component {
+  validate = text => {
+    console.log(text);
+    let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (reg.test(text) === false) {
+      console.log('Email is Not Correct');
+      this.setState({email: text});
+      return false;
+    } else {
+      this.setState({email: text});
+      console.log('Email is Correct');
+    }
+  };
+
   static navigationOptions = {
     header: null,
   };
@@ -14,12 +35,25 @@ export default class SignUp extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <Text style={styles.marka}>Ortak</Text>
+        <Icon size={160} color="#e74c3c" name="user-circle" solid></Icon>
         <TextInput placeholder="Kullanıcı Adınız" style={styles.textInput} />
-        <TextInput placeholder="Email adresi" style={styles.textInput} />
-        <TextInput placeholder="Parola" style={styles.textInput} />
-        <TextInput placeholder="Tekrar Parola" style={styles.textInput} />
+        <TextInput
+          onChangeText={text => this.validate(text)}
+          placeholder="Email adresi"
+          style={styles.textInput}
+        />
+        <TextInput
+          secureTextEntry={true}
+          placeholder="Parola"
+          style={styles.textInput}
+        />
+        <TextInput
+          secureTextEntry={true}
+          placeholder="Tekrar Parola"
+          style={styles.textInput}
+        />
         <Button
           title="Kayıt Ol"
           style={styles.button}
@@ -29,7 +63,7 @@ export default class SignUp extends Component {
           {' '}
           Kayıt olduysan<Text style={styles.registerLink}>Giriş Yap</Text>{' '}
         </Text>
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }

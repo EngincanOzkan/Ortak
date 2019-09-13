@@ -12,9 +12,15 @@ export default class ListItem extends Component {
     return (
       <View>
         <View style={styles.ItemView}>
-          <Text style={styles.ItemText}>{this.props.title}</Text>
-          <View style={styles.ItemGoArrowIcon}>
-            <Icon name="chevron-right"></Icon>
+          <Icon
+            style={{margin: 10, flex: 2}}
+            size={30}
+            color="#000"
+            name="user-circle"
+            solid></Icon>
+          <Text style={styles.ItemExpenseTitle}>{this.props.title}</Text>
+          <View style={styles.ItemExpenseAmount}>
+            <Text style={styles.ItemText}>{this.props.amount}</Text>
           </View>
         </View>
       </View>

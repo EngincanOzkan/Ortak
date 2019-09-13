@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput, FlatList, Button} from 'react-native';
+import {View, Text, TextInput, FlatList, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import styles from '../Style/Stylesheet';
-import ListItem from '../Tools/customListItem';
+import ListItem from '../Tools/customListExpense';
+import Swipeout from 'react-native-swipeout';
 
 export default class Board extends Component {
   constructor(props) {
@@ -24,30 +25,71 @@ export default class Board extends Component {
 
   render() {
     const {navigate} = this.props.navigation;
+    var swipeoutBtns = [
+      {
+        text: 'Delete',
+        backgroundColor: 'red',
+        onPress: () => navigate('Home'),
+      },
+    ];
+
     return (
       <View style={styles.container}>
-        <Text style={styles.explanationText}>Giderler</Text>
+        <Text style={styles.explanationTitleText}>Giderler</Text>
+        <Text style={styles.explanationText}>Toplam Gider: 2000₺</Text>
         <View style={styles.ListContainer}>
           <FlatList
             data={[
-              {key: 'Devin'},
-              {key: 'Dan'},
-              {key: 'Dominic'},
-              {key: 'Jackson'},
-              {key: 'James'},
-              {key: 'Joel'},
-              {key: 'John'},
-              {key: 'Jillian'},
-              {key: 'Jimmy'},
-              {key: 'Julie'},
+              {title: 'Kira', amount: '300'},
+              {title: 'Su faturası', amount: '300'},
+              {title: 'Doğalgaz', amount: '400'},
+              {title: 'Elektrik', amount: '50'},
+              {title: 'Market', amount: '500'},
+              {title: 'Geçenki Parti', amount: '700'},
+              {title: 'Aburcubur', amount: '10'},
+              {
+                title: 'Türknet ADSL ve Telefon Internet Faturası',
+                amount: '150',
+              },
             ]}
-            renderItem={({item}) => <ListItem title={item.key} />}
+            renderItem={({item}) => (
+              <Swipeout
+                right={swipeoutBtns}
+                autoClose={true}
+                backgroundColor="transparent">
+                <ListItem title={item.title} amount={item.amount + '₺'} />
+              </Swipeout>
+            )}
           />
         </View>
-        <Button
-          title="Gider Ekle"
+
+        <TouchableOpacity
           onPress={() => navigate('AddExpenseToBoard')}
-        />
+          style={styles.circleButton}>
+          <Icon
+            name="plus-circle"
+            backgroundColor="#fff"
+            title="plus"
+            color="#000"
+            size={70}
+            solid></Icon>
+        </TouchableOpacity>
+        <View
+          style={{
+            flexDirection: 'row',
+            backgroundColor: 'lightgray',
+            borderRadius: 4,
+            overflow: 'hidden',
+          }}>
+          <View
+            style={{
+              flex: 0.7,
+              height: 20,
+              backgroundColor: '#e74c3c',
+            }}
+          />
+          <View style={{flex: 1 - 0.7}} />
+        </View>
       </View>
     );
   }

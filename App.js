@@ -29,14 +29,14 @@ import SettingsPage from './Components/Pages/SettingsPage';
 import BoardPage from './Components/Pages/BoardPage';
 
 const MainNavigator = createStackNavigator({
+  AddExpenseToBoard: {screen: AddExpenseToBoardPage},
+  Board: {screen: BoardPage},
+  ExpenseBoardCreate: {screen: ExpenseBoardCreatePage},
+  Home: {screen: HomePage},
   Login: {screen: LoginPage},
   SignUp: {screen: SignUpPage},
-  Home: {screen: HomePage},
   Settings: {screen: SettingsPage},
-  AddExpenseToBoard: {screen: AddExpenseToBoardPage},
-  ExpenseBoardCreate: {screen: ExpenseBoardCreatePage},
   AddPartnerToBoard: {screen: AddPartnerToBoardPage},
-  Board: {screen: BoardPage},
 });
 
 const App = createAppContainer(MainNavigator);

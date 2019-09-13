@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput, FlatList, Button} from 'react-native';
-
+import {
+  View,
+  Text,
+  TextInput,
+  FlatList,
+  Button,
+  TouchableOpacity,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import styles from '../Style/Stylesheet';
 import ListItem from '../Tools/customListItem';
 
@@ -55,13 +62,17 @@ export default class AddExpenseToBoard extends Component {
             renderItem={({item}) => <ListItem title={item.key} />}
           />
         </View>
-        <View style={styles.button}>
-          <Button
-            title="Seçili Kullanıcıyı Panoya Ortak Yap"
-            color="#fff"
-            onPress={() => navigate('ExpenseBoardCreate')}
-          />
-        </View>
+        <TouchableOpacity
+          onPress={() => navigate('ExpenseBoardCreate')}
+          style={styles.circleButton}>
+          <Icon
+            name="check-circle"
+            backgroundColor="#fff"
+            title="plus"
+            color="#000"
+            size={70}
+            solid></Icon>
+        </TouchableOpacity>
       </View>
     );
   }
