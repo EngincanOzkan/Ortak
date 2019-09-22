@@ -10,11 +10,11 @@ export default class Settings extends Component {
       title: 'Ayarlar',
       headerRight: null,
       headerLeft: (
-        <Button
-          title="Vazgeç"
+        <Icon.Button
+          name="chevron-left"
           backgroundColor="rgba(0, 0, 0, 0.0)"
           color="#000000"
-          onPress={() => navigation.navigate('Home')}></Button>
+          onPress={() => navigation.navigate('Profile')}></Icon.Button>
       ),
     };
   };

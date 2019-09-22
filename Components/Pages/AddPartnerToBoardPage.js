@@ -20,12 +20,11 @@ export default class AddExpenseToBoard extends Component {
     return {
       title: 'Kullanıcılar',
       headerLeft: (
-        <Button
-          title="Vazgeç"
+        <Icon.Button
+          name="chevron-left"
           backgroundColor="rgba(0, 0, 0, 0.0)"
           color="#000000"
-          onPress={() => navigation.navigate('ExpenseBoardCreate')}
-        />
+          onPress={() => navigation.navigate('Home')}></Icon.Button>
       ),
     };
   };

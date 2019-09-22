@@ -12,10 +12,10 @@ export default class Home extends Component {
       title: 'Anasayfa',
       headerRight: (
         <Icon.Button
-          name="cog"
+          name="user"
           backgroundColor="rgba(0, 0, 0, 0.0)"
           color="#000000"
-          onPress={() => navigation.navigate('Settings')}></Icon.Button>
+          onPress={() => navigation.navigate('Profile')}></Icon.Button>
       ),
       headerLeft: null,
     };
@@ -29,7 +29,7 @@ export default class Home extends Component {
     const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Text style={styles.explanationTitleText}>Panolorınız</Text>
+        <Text style={styles.explanationTitleText}>Panolarım</Text>
         <View style={styles.ListContainer}>
           <FlatList
             data={[{key: 'Devin'}, {key: 'Dan'}, {key: 'Dominic'}]}

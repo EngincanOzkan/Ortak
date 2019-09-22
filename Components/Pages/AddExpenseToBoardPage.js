@@ -20,18 +20,17 @@ export default class AddExpenseToBoard extends Component {
     return {
       title: 'Gider Ekle',
       headerLeft: (
-        <Button
-          title="Vazgeç"
+        <Icon.Button
+          name="chevron-left"
           backgroundColor="rgba(0, 0, 0, 0.0)"
           color="#000000"
-          onPress={() => navigation.navigate('Board')}
-        />
+          onPress={() => navigation.navigate('Home')}></Icon.Button>
       ),
     };
   };
 
   render() {
-    const {navigate} = this.props.navigation;
+    const { navigate } = this.props.navigation;
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <View style={styles.explanationView}>

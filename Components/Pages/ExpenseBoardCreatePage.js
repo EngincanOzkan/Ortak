@@ -20,12 +20,11 @@ export default class ExpenseBoardCreate extends Component {
     return {
       title: 'Gider Panosu Oluştur',
       headerLeft: (
-        <Button
-          title="Vazgeç"
+        <Icon.Button
+          name="chevron-left"
           backgroundColor="rgba(0, 0, 0, 0.0)"
           color="#000000"
-          onPress={() => navigation.navigate('Home')}
-        />
+          onPress={() => navigation.navigate('Home')}></Icon.Button>
       ),
     };
   };
