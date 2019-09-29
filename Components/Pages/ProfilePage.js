@@ -1,29 +1,22 @@
-import React, { Component } from 'react';
-import { Text, View, Image, FlatList, Button, TouchableOpacity } from 'react-native';
-import * as Progress from 'react-native-progress';
+import React, {Component} from 'react';
+import {Text, Image, TouchableOpacity} from 'react-native';
 import styles from '../Style/Stylesheet';
 import Icon from 'react-native-vector-icons/FontAwesome5';
-
-import ListItem from '../Tools/customListItem';
+import LinearGradient from 'react-native-linear-gradient';
+import GoBackButton from '../Tools/goBackButton';
 
 export default class Profile extends Component {
-  static navigationOptions = ({ navigation }) => {
+  static navigationOptions = ({navigation}) => {
     return {
-      title: 'Profile',
+      title: 'Profil',
+      headerTitleStyle: styles.topBarText,
+      headerTransparent: true,
       headerRight: (
-        <Icon.Button
-          name="cog"
-          backgroundColor="rgba(0, 0, 0, 0.0)"
-          color="#000000"
-          onPress={() => navigation.navigate('Settings')}></Icon.Button>
+        <TouchableOpacity onPress={() => navigation.navigate('Settings')}>
+          <Icon name="sliders-h" style={styles.topBarIcon}></Icon>
+        </TouchableOpacity>
       ),
-      headerLeft: (
-        <Icon.Button
-          name="chevron-left"
-          backgroundColor="rgba(0, 0, 0, 0.0)"
-          color="#000000"
-          onPress={() => navigation.navigate('Home')}></Icon.Button>
-      ),
+      headerLeft: <GoBackButton navigation={navigation} />,
     };
   };
 
@@ -32,11 +25,16 @@ export default class Profile extends Component {
   }
 
   render() {
-    const { navigate } = this.props.navigation;
+    const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
-        <Text> Yunus Yarba </Text>
-      </View>
+      <LinearGradient colors={['#56CCF2', '#2F80ED']} style={styles.container}>
+        <Image
+          source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+          style={styles.profileImage}
+        />
+        <Text style={styles.textStyle}> Yunus Yarba </Text>
+        <Text style={styles.textStyle}> YunusYarba@gmail.com </Text>
+      </LinearGradient>
     );
   }
 }

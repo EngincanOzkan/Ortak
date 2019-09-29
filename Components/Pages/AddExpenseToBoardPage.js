@@ -1,15 +1,8 @@
 import React, {Component} from 'react';
-import {
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-  Button,
-  TouchableOpacity,
-  KeyboardAvoidingView,
-} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import {Text, TextInput, View, KeyboardAvoidingView} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from '../Style/Stylesheet';
+import CheckButton from '../Tools/checkButton';
 
 export default class AddExpenseToBoard extends Component {
   constructor(props) {
@@ -30,7 +23,7 @@ export default class AddExpenseToBoard extends Component {
   };
 
   render() {
-    const { navigate } = this.props.navigation;
+    const {navigate} = this.props.navigation;
     return (
       <KeyboardAvoidingView style={styles.container} behavior="padding" enabled>
         <View style={styles.explanationView}>
@@ -47,17 +40,7 @@ export default class AddExpenseToBoard extends Component {
             Ekleme Yapıldıktan sonra pano totali: 0₺
           </Text>
         </View>
-        <TouchableOpacity
-          onPress={() => navigate('Board')}
-          style={styles.circleButton}>
-          <Icon
-            name="check-circle"
-            backgroundColor="#fff"
-            title="plus"
-            color="#000"
-            size={70}
-            solid></Icon>
-        </TouchableOpacity>
+        <CheckButton navigation={this.props.navigation} navigateTo={'Board'} />
       </KeyboardAvoidingView>
     );
   }

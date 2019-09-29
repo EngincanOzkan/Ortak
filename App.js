@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, { Fragment, Component } from 'react';
+import React, {Fragment, Component} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -17,7 +17,13 @@ import {
   Navigator,
 } from 'react-native';
 
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import {
+  createStackNavigator,
+  createAppContainer,
+  StackViewTransitionConfigs,
+} from 'react-navigation';
+
+import {fadeOut} from 'react-navigation-transitions';
 
 import LoginPage from './Components/Pages/LoginPage';
 import SignUpPage from './Components/Pages/SignUpPage';
@@ -29,17 +35,23 @@ import SettingsPage from './Components/Pages/SettingsPage';
 import BoardPage from './Components/Pages/BoardPage';
 import ProfilePage from './Components/Pages/ProfilePage';
 
-const MainNavigator = createStackNavigator({
-  Profile: { screen: ProfilePage },
-  AddExpenseToBoard: { screen: AddExpenseToBoardPage },
-  Board: { screen: BoardPage },
-  ExpenseBoardCreate: { screen: ExpenseBoardCreatePage },
-  Home: { screen: HomePage },
-  Login: { screen: LoginPage },
-  SignUp: { screen: SignUpPage },
-  Settings: { screen: SettingsPage },
-  AddPartnerToBoard: { screen: AddPartnerToBoardPage },
-});
+const MainNavigator = createStackNavigator(
+  {
+    Home: {screen: HomePage},
+    Profile: {screen: ProfilePage},
+    AddExpenseToBoard: {screen: AddExpenseToBoardPage},
+    Board: {screen: BoardPage},
+    ExpenseBoardCreate: {screen: ExpenseBoardCreatePage},
+    Login: {screen: LoginPage},
+    SignUp: {screen: SignUpPage},
+    Settings: {screen: SettingsPage},
+    AddPartnerToBoard: {screen: AddPartnerToBoardPage},
+  },
+  {
+    initialRouteName: 'Home',
+    transitionConfig: () => fadeOut(),
+  },
+);
 
 const App = createAppContainer(MainNavigator);
 

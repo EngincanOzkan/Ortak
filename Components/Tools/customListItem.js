@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from '../Style/Stylesheet';
 
 export default class ListItem extends Component {
@@ -13,8 +13,8 @@ export default class ListItem extends Component {
       <View>
         <View style={styles.ItemView}>
           <Text style={styles.ItemText}>{this.props.title}</Text>
-          <View style={styles.ItemGoArrowIcon}>
-            <Icon name="chevron-right"></Icon>
+          <View style={styles.ItemGoArrowIconView}>
+            <Icon style={styles.ItemGoArrowIcon} name="chevron-right"></Icon>
           </View>
         </View>
       </View>

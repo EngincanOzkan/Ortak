@@ -1,21 +1,19 @@
 import React, {Component} from 'react';
-import {Text, TextInput, View, Button} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-
+import {Text, Image, View, KeyboardAvoidingView} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
+import GoBackButton from '../Tools/goBackButton';
 import styles from '../Style/Stylesheet';
+import CheckButton from '../Tools/checkButton';
+import TextInputStylish from '../Tools/textInputStylish';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default class Settings extends Component {
   static navigationOptions = ({navigation}) => {
     return {
       title: 'Ayarlar',
-      headerRight: null,
-      headerLeft: (
-        <Icon.Button
-          name="chevron-left"
-          backgroundColor="rgba(0, 0, 0, 0.0)"
-          color="#000000"
-          onPress={() => navigation.navigate('Profile')}></Icon.Button>
-      ),
+      headerTitleStyle: styles.topBarText,
+      headerTransparent: true,
+      headerLeft: <GoBackButton navigation={navigation} />,
     };
   };
 
@@ -26,54 +24,25 @@ export default class Settings extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <LinearGradient colors={['#56CCF2', '#2F80ED']} style={styles.container}>
+        <KeyboardAvoidingView
+          style={styles.sendControlContainerOuter}
+          behavior="padding">
+          <View style={styles.sendControlContainerInner}>
+            <Image
+              source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+              style={styles.profileImageSettings}
+            />
+            <Icon name="sync-alt" style={styles.styleOfChangeItem}></Icon>
+          </View>
+          <TextInputStylish placeholder="Kullanıcı Adınız" />
+          <TextInputStylish placeholder="Eposta Adresi" />
+          <TextInputStylish placeholder="Parola" />
+          <TextInputStylish placeholder="Parola Tekrarı" />
+        </KeyboardAvoidingView>
         <Text style={styles.marka}>Ortak</Text>
-        <TextInput placeholder="Kullanıcı Adınız" style={styles.textInput} />
-        <TextInput placeholder="Email adresi" style={styles.textInput} />
-        <TextInput placeholder="Parola" style={styles.textInput} />
-        <TextInput placeholder="Tekrar Parola" style={styles.textInput} />
-        <Button
-          title="Güncelle"
-          style={styles.button}
-          onPress={() => navigate('Home')}
-        />
-      </View>
+        <CheckButton navigation={this.props.navigation} navigateTo="Home" />
+      </LinearGradient>
     );
   }
 }
-/*
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    padding: 6,
-    backgroundColor: '#2980b9',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#FFF',
-    alignSelf: 'stretch',
-    marginBottom: 2,
-  },
-  textInput: {
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: '#2980b9',
-    padding: 6,
-    alignSelf: 'stretch',
-    marginHorizontal: 15,
-    marginBottom: 4,
-  },
-  marka: {
-    fontSize: 35,
-    fontWeight: '600',
-    marginBottom: 5,
-    color: '#e74c3c',
-  },
-  registerLink: {
-    color: '#3498db',
-  },
-});*/

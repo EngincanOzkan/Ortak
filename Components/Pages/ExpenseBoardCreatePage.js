@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import styles from '../Style/Stylesheet';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import ListItem from '../Tools/customListItem';
 
 export default class ExpenseBoardCreate extends Component {

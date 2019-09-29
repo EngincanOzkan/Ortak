@@ -27,13 +27,16 @@ target 'Ortak' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+
+
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
-  pod 'React', path: '../node_modules/react-native', subspecs: [
-  'ART',
-  ]
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'OrtakTests' do
     inherit! :search_paths

@@ -8,34 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* OrtakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OrtakTests.m */; };
-		0D8A90204B5243DC8DA3FD0C /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75857B794D804C58A766B1B7 /* FontAwesome5_Regular.ttf */; };
+		0D114F0D7E3462AB3CC60067 /* libPods-Ortak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 657F6C46EAADA848C9DD7D72 /* libPods-Ortak.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1D5310BE078F42678652B403 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B2A145BCAB24330875001C7 /* FontAwesome5_Brands.ttf */; };
-		29075DB0F4564111B1683162 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99D8E03E14214DF5A6CDF164 /* Fontisto.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* OrtakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OrtakTests.m */; };
-		4225C0DCFBB241728F89D315 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44C6B51A780F47C98C6F75D8 /* Foundation.ttf */; };
-		4294A9FCCC9B44F7884A6F41 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CC2CC8A91314AF5B85DA2F3 /* MaterialCommunityIcons.ttf */; };
-		47ADFDF4FA12456CB32FECE0 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41B7D78C22104BA4821F5DDB /* FontAwesome.ttf */; };
-		49F92ECA1B0B41628C58CBC9 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DF51E1DE6BA4762B7A455CA /* SimpleLineIcons.ttf */; };
-		545E511BBD13181295CA376E /* libPods-Ortak.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F510909F5A863867C1664E /* libPods-Ortak.a */; };
-		5C78F507E0686CF31E4F8C8C /* libPods-OrtakTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 642B69F6D40CB58F9D9686C3 /* libPods-OrtakTests.a */; };
-		6609147F8F344566A2992245 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B26E11D0645549E599907C30 /* Octicons.ttf */; };
-		6944192639E44443AFD426C8 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2108CE6241FCB4349796 /* EvilIcons.ttf */; };
-		7C7296735A6C48E98542994E /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 012BCE66347F47A6A26A6045 /* FontAwesome5_Solid.ttf */; };
-		7F1593421C8A4382B02DD0F3 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90300C56ED3D4E3F93421A1B /* Entypo.ttf */; };
-		96F61481421E973B0C6B170D /* libPods-Ortak-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A789991A2254872782783 /* libPods-Ortak-tvOS.a */; };
-		9DBBC36FC6844AE899E207B8 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17E813042DF44A71B2341D50 /* AntDesign.ttf */; };
-		B120A8FCE8A348DE869C9D07 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFB7F18B249143D1A6BDA8B0 /* Zocial.ttf */; };
-		BAFA877FA05747D1B8044005 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D0D5E0445744A2B1A85ED4 /* Ionicons.ttf */; };
-		C714065E21B745B7AE123575 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 436F4A1827994B289A649FE8 /* MaterialIcons.ttf */; };
-		E0D52F568D854C69A62D6D9F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0894A1FF146467FB69BC0AB /* Feather.ttf */; };
-		E5FB91C2B54F51799A0AFB23 /* libPods-Ortak-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09335B902B48BD66D17BC62D /* libPods-Ortak-tvOSTests.a */; };
+		34D5ECAD04444501BC30F798 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 22A96B557B754350BF741564 /* Roboto-Regular.ttf */; };
+		71E350DEEFD3624A3E3A41DA /* libPods-Ortak-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1B5FE11441A96FBE0449DC /* libPods-Ortak-tvOSTests.a */; };
+		794EAD0F80DD8598395C3875 /* libPods-Ortak-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8462AC589B3BBCEBBB256C27 /* libPods-Ortak-tvOS.a */; };
+		909A1FBA27F8B7CBBC8169CC /* libPods-OrtakTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFAD4A8DA59E61FB3E27EAD /* libPods-OrtakTests.a */; };
+		BCDAA56E84284F80BDE07E90 /* Satisfy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066E60CD7EB8485DAB3C2A38 /* Satisfy-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +46,9 @@
 		00E356EE1AD99517003FC87E /* OrtakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrtakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* OrtakTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrtakTests.m; sourceTree = "<group>"; };
-		012BCE66347F47A6A26A6045 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
-		034006FA8D5E0A8DDC11AF7F /* Pods-Ortak-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOSTests/Pods-Ortak-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		09335B902B48BD66D17BC62D /* libPods-Ortak-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortak-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		066E60CD7EB8485DAB3C2A38 /* Satisfy-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Satisfy-Regular.ttf"; path = "../assets/fonts/Satisfy-Regular.ttf"; sourceTree = "<group>"; };
+		06CB88FF69C9444EA9E3741C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		11257E5C98444DCAB7977A92 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Ortak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ortak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Ortak/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Ortak/AppDelegate.m; sourceTree = "<group>"; };
@@ -70,35 +56,38 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Ortak/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Ortak/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Ortak/main.m; sourceTree = "<group>"; };
-		17E813042DF44A71B2341D50 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		1CC2CC8A91314AF5B85DA2F3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		20BF80CA91346C09F72B21B6 /* Pods-OrtakTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtakTests.debug.xcconfig"; path = "Target Support Files/Pods-OrtakTests/Pods-OrtakTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2B2A145BCAB24330875001C7 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		1C44362B66B3482694E39544 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		22A96B557B754350BF741564 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Ortak-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ortak-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Ortak-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ortak-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		41B7D78C22104BA4821F5DDB /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		436F4A1827994B289A649FE8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		44C6B51A780F47C98C6F75D8 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		5B2A789991A2254872782783 /* libPods-Ortak-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortak-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63E926A6A5777A6EC63A1FF9 /* Pods-Ortak-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOS/Pods-Ortak-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		642B69F6D40CB58F9D9686C3 /* libPods-OrtakTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrtakTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75857B794D804C58A766B1B7 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		7D8B0004B1DDDD881F655713 /* Pods-Ortak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak.debug.xcconfig"; path = "Target Support Files/Pods-Ortak/Pods-Ortak.debug.xcconfig"; sourceTree = "<group>"; };
-		88B8B2C8E5831537D2408740 /* Pods-Ortak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak.release.xcconfig"; path = "Target Support Files/Pods-Ortak/Pods-Ortak.release.xcconfig"; sourceTree = "<group>"; };
-		8DF51E1DE6BA4762B7A455CA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
-		90300C56ED3D4E3F93421A1B /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		99D8E03E14214DF5A6CDF164 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		9B2B0A6CFFC4FFD76B1A4EC9 /* Pods-OrtakTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtakTests.release.xcconfig"; path = "Target Support Files/Pods-OrtakTests/Pods-OrtakTests.release.xcconfig"; sourceTree = "<group>"; };
-		9E9C2108CE6241FCB4349796 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		AFB7F18B249143D1A6BDA8B0 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		B0894A1FF146467FB69BC0AB /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		B26E11D0645549E599907C30 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		B995945023ACEB8F22A8AEC8 /* Pods-Ortak-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOS/Pods-Ortak-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		E5F510909F5A863867C1664E /* libPods-Ortak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E88C07274C341019EA52F6 /* Pods-Ortak-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOS/Pods-Ortak-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		355E1BFAEF5B4688ABF73C07 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		426134E54BF5460282924362 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		5ED5764DADDF4502B0650620 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		5F73E197AAA042C68581C4FA /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		657F6C46EAADA848C9DD7D72 /* libPods-Ortak.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortak.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676480AB255489EC6E898271 /* Pods-Ortak-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOSTests/Pods-Ortak-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		73771D49FD8D4CDFA9083007 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		7B1B5FE11441A96FBE0449DC /* libPods-Ortak-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortak-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B37E948B893350ED239FDDF /* Pods-Ortak.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak.release.xcconfig"; path = "Target Support Files/Pods-Ortak/Pods-Ortak.release.xcconfig"; sourceTree = "<group>"; };
+		8462AC589B3BBCEBBB256C27 /* libPods-Ortak-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ortak-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A2BE74F8B5448794D1B11F /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		8AC3EF2AD00A42E2B6CBC7C6 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		9CEA6C85233D4595961050ED /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		A2F808BF6EA34321A98454B9 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		AEB0B99F85B11F8FBCEC377B /* Pods-OrtakTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtakTests.release.xcconfig"; path = "Target Support Files/Pods-OrtakTests/Pods-OrtakTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0C9B700D8784731ACF04FCB /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		B4C0A498051F4ADF92FFF2DB /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		B691A2527D974F55816D32A0 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		B803F8E9028CE76129242DD0 /* Pods-Ortak-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOS/Pods-Ortak-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C795FE0778CDB9E90E39426C /* Pods-Ortak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak.debug.xcconfig"; path = "Target Support Files/Pods-Ortak/Pods-Ortak.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3EADEB21601C253D38CB61 /* Pods-OrtakTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrtakTests.debug.xcconfig"; path = "Target Support Files/Pods-OrtakTests/Pods-OrtakTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAFAD4A8DA59E61FB3E27EAD /* libPods-OrtakTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrtakTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		EE7947BFBBA9E9630A5C030C /* Pods-Ortak-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOSTests/Pods-Ortak-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		F9D0D5E0445744A2B1A85ED4 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		F001D6D07C1C43BE877A65E7 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		F6F1755D6A4F4B86B8E97AC6 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		FDED5B4FABC6C0CA672DF101 /* Pods-Ortak-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ortak-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Ortak-tvOSTests/Pods-Ortak-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C78F507E0686CF31E4F8C8C /* libPods-OrtakTests.a in Frameworks */,
+				909A1FBA27F8B7CBBC8169CC /* libPods-OrtakTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545E511BBD13181295CA376E /* libPods-Ortak.a in Frameworks */,
+				0D114F0D7E3462AB3CC60067 /* libPods-Ortak.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F61481421E973B0C6B170D /* libPods-Ortak-tvOS.a in Frameworks */,
+				794EAD0F80DD8598395C3875 /* libPods-Ortak-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5FB91C2B54F51799A0AFB23 /* libPods-Ortak-tvOSTests.a in Frameworks */,
+				71E350DEEFD3624A3E3A41DA /* libPods-Ortak-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,31 +157,15 @@
 			name = Ortak;
 			sourceTree = "<group>";
 		};
-		1898CE04BCAA6A365BA68694 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7D8B0004B1DDDD881F655713 /* Pods-Ortak.debug.xcconfig */,
-				88B8B2C8E5831537D2408740 /* Pods-Ortak.release.xcconfig */,
-				63E926A6A5777A6EC63A1FF9 /* Pods-Ortak-tvOS.debug.xcconfig */,
-				B995945023ACEB8F22A8AEC8 /* Pods-Ortak-tvOS.release.xcconfig */,
-				034006FA8D5E0A8DDC11AF7F /* Pods-Ortak-tvOSTests.debug.xcconfig */,
-				EE7947BFBBA9E9630A5C030C /* Pods-Ortak-tvOSTests.release.xcconfig */,
-				20BF80CA91346C09F72B21B6 /* Pods-OrtakTests.debug.xcconfig */,
-				9B2B0A6CFFC4FFD76B1A4EC9 /* Pods-OrtakTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				E5F510909F5A863867C1664E /* libPods-Ortak.a */,
-				5B2A789991A2254872782783 /* libPods-Ortak-tvOS.a */,
-				09335B902B48BD66D17BC62D /* libPods-Ortak-tvOSTests.a */,
-				642B69F6D40CB58F9D9686C3 /* libPods-OrtakTests.a */,
+				657F6C46EAADA848C9DD7D72 /* libPods-Ortak.a */,
+				8462AC589B3BBCEBBB256C27 /* libPods-Ortak-tvOS.a */,
+				7B1B5FE11441A96FBE0449DC /* libPods-Ortak-tvOSTests.a */,
+				EAFAD4A8DA59E61FB3E27EAD /* libPods-OrtakTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,25 +173,42 @@
 		649B6CAC896E4174BC8DFA45 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				17E813042DF44A71B2341D50 /* AntDesign.ttf */,
-				90300C56ED3D4E3F93421A1B /* Entypo.ttf */,
-				9E9C2108CE6241FCB4349796 /* EvilIcons.ttf */,
-				B0894A1FF146467FB69BC0AB /* Feather.ttf */,
-				41B7D78C22104BA4821F5DDB /* FontAwesome.ttf */,
-				2B2A145BCAB24330875001C7 /* FontAwesome5_Brands.ttf */,
-				75857B794D804C58A766B1B7 /* FontAwesome5_Regular.ttf */,
-				012BCE66347F47A6A26A6045 /* FontAwesome5_Solid.ttf */,
-				99D8E03E14214DF5A6CDF164 /* Fontisto.ttf */,
-				44C6B51A780F47C98C6F75D8 /* Foundation.ttf */,
-				F9D0D5E0445744A2B1A85ED4 /* Ionicons.ttf */,
-				1CC2CC8A91314AF5B85DA2F3 /* MaterialCommunityIcons.ttf */,
-				436F4A1827994B289A649FE8 /* MaterialIcons.ttf */,
-				B26E11D0645549E599907C30 /* Octicons.ttf */,
-				8DF51E1DE6BA4762B7A455CA /* SimpleLineIcons.ttf */,
-				AFB7F18B249143D1A6BDA8B0 /* Zocial.ttf */,
+				5F73E197AAA042C68581C4FA /* Roboto-Medium.ttf */,
+				066E60CD7EB8485DAB3C2A38 /* Satisfy-Regular.ttf */,
+				426134E54BF5460282924362 /* AntDesign.ttf */,
+				5ED5764DADDF4502B0650620 /* Entypo.ttf */,
+				A2F808BF6EA34321A98454B9 /* EvilIcons.ttf */,
+				1C44362B66B3482694E39544 /* Feather.ttf */,
+				88A2BE74F8B5448794D1B11F /* FontAwesome.ttf */,
+				8AC3EF2AD00A42E2B6CBC7C6 /* FontAwesome5_Brands.ttf */,
+				B4C0A498051F4ADF92FFF2DB /* FontAwesome5_Regular.ttf */,
+				06CB88FF69C9444EA9E3741C /* FontAwesome5_Solid.ttf */,
+				B0C9B700D8784731ACF04FCB /* Fontisto.ttf */,
+				9CEA6C85233D4595961050ED /* Foundation.ttf */,
+				11257E5C98444DCAB7977A92 /* Ionicons.ttf */,
+				355E1BFAEF5B4688ABF73C07 /* MaterialCommunityIcons.ttf */,
+				F001D6D07C1C43BE877A65E7 /* MaterialIcons.ttf */,
+				73771D49FD8D4CDFA9083007 /* Octicons.ttf */,
+				F6F1755D6A4F4B86B8E97AC6 /* SimpleLineIcons.ttf */,
+				B691A2527D974F55816D32A0 /* Zocial.ttf */,
+				22A96B557B754350BF741564 /* Roboto-Regular.ttf */,
 			);
 			name = Resources;
-			path = "";
+			sourceTree = "<group>";
+		};
+		7BE4BF704DEA751AA64FD18C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C795FE0778CDB9E90E39426C /* Pods-Ortak.debug.xcconfig */,
+				7B37E948B893350ED239FDDF /* Pods-Ortak.release.xcconfig */,
+				34E88C07274C341019EA52F6 /* Pods-Ortak-tvOS.debug.xcconfig */,
+				B803F8E9028CE76129242DD0 /* Pods-Ortak-tvOS.release.xcconfig */,
+				FDED5B4FABC6C0CA672DF101 /* Pods-Ortak-tvOSTests.debug.xcconfig */,
+				676480AB255489EC6E898271 /* Pods-Ortak-tvOSTests.release.xcconfig */,
+				CD3EADEB21601C253D38CB61 /* Pods-OrtakTests.debug.xcconfig */,
+				AEB0B99F85B11F8FBCEC377B /* Pods-OrtakTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -236,8 +226,8 @@
 				00E356EF1AD99517003FC87E /* OrtakTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				1898CE04BCAA6A365BA68694 /* Pods */,
 				649B6CAC896E4174BC8DFA45 /* Resources */,
+				7BE4BF704DEA751AA64FD18C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -262,7 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OrtakTests" */;
 			buildPhases = (
-				95A1FA2EE5E48F19F86166A4 /* [CP] Check Pods Manifest.lock */,
+				C6042263536538AEC9165BE3 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -281,13 +271,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Ortak" */;
 			buildPhases = (
-				5CACF1AEDC93CDC8A008297F /* [CP] Check Pods Manifest.lock */,
+				4B4B00A854A6EEE011005CC8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				2BB02D13442085FF272C8E05 /* [CP] Copy Pods Resources */,
+				5FE780167334A61859AD2753 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Ortak-tvOS" */;
 			buildPhases = (
-				2DF05C8BD9B9BCBB1CC92455 /* [CP] Check Pods Manifest.lock */,
+				9D5ABDA8E2A75436DCCBE8B8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -322,7 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Ortak-tvOSTests" */;
 			buildPhases = (
-				0CCF742A1305BFC174CAB8B6 /* [CP] Check Pods Manifest.lock */,
+				6333AFEB07BC43B476DAD876 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -343,12 +333,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = LDJP2YQVD6;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -366,6 +359,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -396,22 +390,8 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				9DBBC36FC6844AE899E207B8 /* AntDesign.ttf in Resources */,
-				7F1593421C8A4382B02DD0F3 /* Entypo.ttf in Resources */,
-				6944192639E44443AFD426C8 /* EvilIcons.ttf in Resources */,
-				E0D52F568D854C69A62D6D9F /* Feather.ttf in Resources */,
-				47ADFDF4FA12456CB32FECE0 /* FontAwesome.ttf in Resources */,
-				1D5310BE078F42678652B403 /* FontAwesome5_Brands.ttf in Resources */,
-				0D8A90204B5243DC8DA3FD0C /* FontAwesome5_Regular.ttf in Resources */,
-				7C7296735A6C48E98542994E /* FontAwesome5_Solid.ttf in Resources */,
-				29075DB0F4564111B1683162 /* Fontisto.ttf in Resources */,
-				4225C0DCFBB241728F89D315 /* Foundation.ttf in Resources */,
-				BAFA877FA05747D1B8044005 /* Ionicons.ttf in Resources */,
-				4294A9FCCC9B44F7884A6F41 /* MaterialCommunityIcons.ttf in Resources */,
-				C714065E21B745B7AE123575 /* MaterialIcons.ttf in Resources */,
-				6609147F8F344566A2992245 /* Octicons.ttf in Resources */,
-				49F92ECA1B0B41628C58CBC9 /* SimpleLineIcons.ttf in Resources */,
-				B120A8FCE8A348DE869C9D07 /* Zocial.ttf in Resources */,
+				BCDAA56E84284F80BDE07E90 /* Satisfy-Regular.ttf in Resources */,
+				34D5ECAD04444501BC30F798 /* Roboto-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +427,21 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		0CCF742A1305BFC174CAB8B6 /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4B4B00A854A6EEE011005CC8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -462,14 +456,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ortak-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Ortak-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2BB02D13442085FF272C8E05 /* [CP] Copy Pods Resources */ = {
+		5FE780167334A61859AD2753 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -517,21 +511,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ortak/Pods-Ortak-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+		6333AFEB07BC43B476DAD876 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Bundle React Native Code And Images";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ortak-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-		2DF05C8BD9B9BCBB1CC92455 /* [CP] Check Pods Manifest.lock */ = {
+		9D5ABDA8E2A75436DCCBE8B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,29 +555,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5CACF1AEDC93CDC8A008297F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ortak-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95A1FA2EE5E48F19F86166A4 /* [CP] Check Pods Manifest.lock */ = {
+		C6042263536538AEC9165BE3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -702,7 +682,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20BF80CA91346C09F72B21B6 /* Pods-OrtakTests.debug.xcconfig */;
+			baseConfigurationReference = CD3EADEB21601C253D38CB61 /* Pods-OrtakTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -725,7 +705,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B2B0A6CFFC4FFD76B1A4EC9 /* Pods-OrtakTests.release.xcconfig */;
+			baseConfigurationReference = AEB0B99F85B11F8FBCEC377B /* Pods-OrtakTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -745,11 +725,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D8B0004B1DDDD881F655713 /* Pods-Ortak.debug.xcconfig */;
+			baseConfigurationReference = C795FE0778CDB9E90E39426C /* Pods-Ortak.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = LDJP2YQVD6;
 				INFOPLIST_FILE = Ortak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -765,10 +746,11 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88B8B2C8E5831537D2408740 /* Pods-Ortak.release.xcconfig */;
+			baseConfigurationReference = 7B37E948B893350ED239FDDF /* Pods-Ortak.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LDJP2YQVD6;
 				INFOPLIST_FILE = Ortak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -784,7 +766,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63E926A6A5777A6EC63A1FF9 /* Pods-Ortak-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 34E88C07274C341019EA52F6 /* Pods-Ortak-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -812,7 +794,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B995945023ACEB8F22A8AEC8 /* Pods-Ortak-tvOS.release.xcconfig */;
+			baseConfigurationReference = B803F8E9028CE76129242DD0 /* Pods-Ortak-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -840,7 +822,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 034006FA8D5E0A8DDC11AF7F /* Pods-Ortak-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = FDED5B4FABC6C0CA672DF101 /* Pods-Ortak-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -867,7 +849,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE7947BFBBA9E9630A5C030C /* Pods-Ortak-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 676480AB255489EC6E898271 /* Pods-Ortak-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -896,6 +878,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -949,6 +932,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

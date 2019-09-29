@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {View, Text, TextInput, FlatList, TouchableOpacity} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from '../Style/Stylesheet';
 import ListItem from '../Tools/customListExpense';
 import Swipeout from 'react-native-swipeout';
+import ProcessBar from '../Tools/ProcessBar';
 
 export default class Board extends Component {
   constructor(props) {
@@ -74,22 +75,8 @@ export default class Board extends Component {
             size={70}
             solid></Icon>
         </TouchableOpacity>
-        <View
-          style={{
-            flexDirection: 'row',
-            backgroundColor: 'lightgray',
-            borderRadius: 4,
-            overflow: 'hidden',
-          }}>
-          <View
-            style={{
-              flex: 0.7,
-              height: 20,
-              backgroundColor: '#e74c3c',
-            }}
-          />
-          <View style={{flex: 1 - 0.7}} />
-        </View>
+
+        <ProcessBar percent={0.7} />
       </View>
     );
   }

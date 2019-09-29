@@ -7,7 +7,7 @@ import {
   Image,
   KeyboardAvoidingView,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from '../Style/Stylesheet';
 
 export default class LoginPage extends Component {
