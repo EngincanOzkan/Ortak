@@ -1,15 +1,11 @@
 import React, {Component} from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  FlatList,
-  Button,
-  TouchableOpacity,
-} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {View, Text, FlatList} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import styles from '../Style/Stylesheet';
 import ListItem from '../Tools/customListItem';
+import GoBackButton from '../Tools/goBackButton';
+import TextInputStylish from '../Tools/textInputStylish';
+import CheckButton from '../Tools/checkButton';
 
 export default class AddExpenseToBoard extends Component {
   constructor(props) {
@@ -19,31 +15,24 @@ export default class AddExpenseToBoard extends Component {
   static navigationOptions = ({navigation}) => {
     return {
       title: 'Kullanıcılar',
-      headerLeft: (
-        <Icon.Button
-          name="chevron-left"
-          backgroundColor="rgba(0, 0, 0, 0.0)"
-          color="#000000"
-          onPress={() => navigation.navigate('Home')}></Icon.Button>
-      ),
+      headerTitleStyle: styles.topBarText,
+      headerTransparent: true,
+      headerRight: null,
+      headerLeft: <GoBackButton navigation={navigation} />,
     };
   };
 
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
+      <LinearGradient colors={['#56CCF2', '#2F80ED']} style={styles.container}>
         <View style={styles.explanationView}>
           <Text style={styles.explanationText}>
-            Gider panonuza ortak olan kullanıcıları(Ev arkadaşınız, halı saha
-            tayfası, particiler) ad ve ya eposta adreslerini kullanarak arayıp,
-            panoya ekleyebilirsin.
+            Gider panonuza ortak olan kullanıcıları ad ve ya eposta adreslerini
+            kullanarak arayıp, panoya ekleyebilirsin.
           </Text>
         </View>
-        <TextInput
-          placeholder="Kullanıcı Adı yada Eposta Adresi"
-          style={styles.textInput}
-        />
+        <TextInputStylish placeholder="Ad veya eposta ile ara..." />
         <View style={styles.ListContainer}>
           <FlatList
             data={[
@@ -61,60 +50,11 @@ export default class AddExpenseToBoard extends Component {
             renderItem={({item}) => <ListItem title={item.key} />}
           />
         </View>
-        <TouchableOpacity
-          onPress={() => navigate('ExpenseBoardCreate')}
-          style={styles.circleButton}>
-          <Icon
-            name="check-circle"
-            backgroundColor="#fff"
-            title="plus"
-            color="#000"
-            size={70}
-            solid></Icon>
-        </TouchableOpacity>
-      </View>
+        <CheckButton
+          navigation={this.props.navigation}
+          navigateTo="ExpenseBoardCreate"
+        />
+      </LinearGradient>
     );
   }
 }
-
-/*const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    borderRadius: 10,
-    margin: 20,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'stretch',
-    flex: 1,
-  },
-  textInput: {
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: '#2980b9',
-    padding: 6,
-    alignSelf: 'stretch',
-    marginHorizontal: 15,
-    marginBottom: 4,
-    marginTop: 4,
-  },
-  ListContainer: {
-    flex: 4,
-    flexDirection: 'row',
-  },
-  explanationView: {
-    flex: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  explanationText: {
-    fontSize: 20,
-    color: '#939393',
-    textAlign: 'center',
-  },
-});*/

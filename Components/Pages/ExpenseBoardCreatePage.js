@@ -8,8 +8,13 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import styles from '../Style/Stylesheet';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import LinearGradient from 'react-native-linear-gradient';
 import ListItem from '../Tools/customListItem';
+import GoBackButton from '../Tools/goBackButton';
+import TextInputStylish from '../Tools/textInputStylish';
+import CheckButton from '../Tools/checkButton';
+import AddUserToBoardButton from '../Tools/addUserToBoardButton';
 
 export default class ExpenseBoardCreate extends Component {
   constructor(props) {
@@ -18,23 +23,18 @@ export default class ExpenseBoardCreate extends Component {
 
   static navigationOptions = ({navigation}) => {
     return {
-      title: 'Gider Panosu Oluştur',
-      headerLeft: (
-        <Icon.Button
-          name="chevron-left"
-          backgroundColor="rgba(0, 0, 0, 0.0)"
-          color="#000000"
-          onPress={() => navigation.navigate('Home')}></Icon.Button>
-      ),
+      title: 'Pano Yarat',
+      headerTitleStyle: styles.topBarText,
+      headerTransparent: true,
+      headerRight: null,
+      headerLeft: <GoBackButton navigation={navigation} />,
     };
   };
 
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View style={styles.container}>
-        <TextInput placeholder="Pano Adı" style={styles.textInputBoardName} />
-
+      <LinearGradient colors={['#56CCF2', '#2F80ED']} style={styles.container}>
         <View
           style={{
             flex: 1,
@@ -43,19 +43,15 @@ export default class ExpenseBoardCreate extends Component {
             alignItems: 'center',
             width: '100%',
           }}>
-          <Text style={styles.explanationText}>Panoya Ortak Ekle</Text>
-          <TouchableOpacity
-            onPress={() => navigate('AddPartnerToBoard')}
-            style={styles.circleButtonUserAdd}>
-            <Icon
-              name="user-plus"
-              backgroundColor="#fff"
-              title="plus"
-              color="#fff"
-              size={30}></Icon>
-          </TouchableOpacity>
+          <Text style={styles.explanationText}>Panoya ortak eklemek için:</Text>
+          <AddUserToBoardButton
+            navigation={this.props.navigation}
+            navigateTo="AddPartnerToBoard"
+          />
         </View>
-        <Text style={styles.explanationTitleText}>Ortaklar</Text>
+        <View style={styles.explanationTitleTextView}>
+          <Text style={styles.explanationTitleText}>Ortaklar</Text>
+        </View>
         <View style={styles.ListContainer}>
           <FlatList
             data={[
@@ -73,50 +69,9 @@ export default class ExpenseBoardCreate extends Component {
             renderItem={({item}) => <ListItem title={item.key} />}
           />
         </View>
-        <TouchableOpacity
-          onPress={() => navigate('Home')}
-          style={styles.circleButton}>
-          <Icon
-            name="check-circle"
-            backgroundColor="#fff"
-            title="plus"
-            color="#000"
-            size={70}
-            solid></Icon>
-        </TouchableOpacity>
-      </View>
+        <CheckButton navigation={this.props.navigation} navigateTo="Home" />
+        <TextInputStylish placeholder="Pano adı giriniz" />
+      </LinearGradient>
     );
   }
 }
-
-/*const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    borderRadius: 10,
-    margin: 20,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'stretch',
-    flex: 1,
-  },
-  textInput: {
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: '#2980b9',
-    padding: 6,
-    alignSelf: 'stretch',
-    marginHorizontal: 15,
-    marginBottom: 4,
-    marginTop: 4,
-  },
-  ListContainer: {
-    flex: 4,
-    flexDirection: 'row',
-  },
-});*/

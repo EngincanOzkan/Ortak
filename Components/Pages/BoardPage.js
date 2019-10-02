@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput, FlatList, TouchableOpacity} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import styles from '../Style/Stylesheet';
-import ListItem from '../Tools/customListExpense';
+import {View, Text, ScrollView, FlatList, Image} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome5';
+import LinearGradient from 'react-native-linear-gradient';
 import Swipeout from 'react-native-swipeout';
+import ListItem from '../Tools/customListExpense';
+import styles from '../Style/Stylesheet';
 import ProcessBar from '../Tools/ProcessBar';
+import GoBackButton from '../Tools/goBackButton';
+import AddButton from '../Tools/addButton';
 
 export default class Board extends Component {
   constructor(props) {
@@ -14,13 +17,10 @@ export default class Board extends Component {
   static navigationOptions = ({navigation}) => {
     return {
       title: 'Pano',
-      headerLeft: (
-        <Icon.Button
-          name="chevron-left"
-          backgroundColor="rgba(0, 0, 0, 0.0)"
-          color="#000000"
-          onPress={() => navigation.navigate('Home')}></Icon.Button>
-      ),
+      headerTitleStyle: styles.topBarText,
+      headerTransparent: true,
+      headerRight: null,
+      headerLeft: <GoBackButton navigation={navigation} />,
     };
   };
 
@@ -35,22 +35,107 @@ export default class Board extends Component {
     ];
 
     return (
-      <View style={styles.container}>
-        <Text style={styles.explanationTitleText}>Giderler</Text>
-        <Text style={styles.explanationText}>Toplam Gider: 2000₺</Text>
+      <LinearGradient colors={['#56CCF2', '#2F80ED']} style={styles.container}>
+        <Text style={styles.textStyle}>Toplam Gider: 2000₺</Text>
+        <Text style={styles.textStyle}>Kişi Başına Düşen Miktar: 200₺</Text>
+        <Text style={styles.textStyle}>Ödemeniz Gereken Mikatar 180₺</Text>
+        <Text style={styles.explanationTitleText}>Ortaklar</Text>
+        <LinearGradient colors={['#ffffff', '#ECE9E6']} style={styles.swiper}>
+          <ScrollView
+            style={styles.partnerListView}
+            contentContainerStyle={{flexGrow: 1}}
+            horizontal={true}>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+            <View style={styles.partnersProfileImageContainerView}>
+              <Image
+                source={{uri: 'https://facebook.github.io/react/logo-og.png'}}
+                style={styles.partnersProfileImage}
+              />
+            </View>
+          </ScrollView>
+        </LinearGradient>
+        <View style={styles.explanationTitleTextView}>
+          <Text style={styles.explanationTitleText}>Giderler</Text>
+        </View>
         <View style={styles.ListContainer}>
           <FlatList
             data={[
-              {title: 'Kira', amount: '300'},
-              {title: 'Su faturası', amount: '300'},
-              {title: 'Doğalgaz', amount: '400'},
-              {title: 'Elektrik', amount: '50'},
-              {title: 'Market', amount: '500'},
-              {title: 'Geçenki Parti', amount: '700'},
-              {title: 'Aburcubur', amount: '10'},
+              {title: 'Kira', amount: '300', paid: false},
+              {title: 'Su faturası', amount: '300', paid: false},
+              {title: 'Doğalgaz', amount: '400', paid: true},
+              {title: 'Elektrik', amount: '50', paid: true},
+              {title: 'Market', amount: '500', paid: false},
+              {title: 'Geçenki Parti', amount: '700', paid: false},
+              {title: 'Aburcubur', amount: '10', paid: false},
               {
                 title: 'Türknet ADSL ve Telefon Internet Faturası',
                 amount: '150',
+                paid: false,
               },
             ]}
             renderItem={({item}) => (
@@ -58,68 +143,21 @@ export default class Board extends Component {
                 right={swipeoutBtns}
                 autoClose={true}
                 backgroundColor="transparent">
-                <ListItem title={item.title} amount={item.amount + '₺'} />
+                <ListItem
+                  title={item.title}
+                  amount={item.amount + '₺'}
+                  paid={item.paid}
+                />
               </Swipeout>
             )}
           />
         </View>
-
-        <TouchableOpacity
-          onPress={() => navigate('AddExpenseToBoard')}
-          style={styles.circleButton}>
-          <Icon
-            name="plus-circle"
-            backgroundColor="#fff"
-            title="plus"
-            color="#000"
-            size={70}
-            solid></Icon>
-        </TouchableOpacity>
-
+        <AddButton
+          navigation={this.props.navigation}
+          navigateTo="AddExpenseToBoard"
+        />
         <ProcessBar percent={0.7} />
-      </View>
+      </LinearGradient>
     );
   }
 }
-
-/*const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    borderRadius: 10,
-    margin: 20,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
-    alignSelf: 'stretch',
-    flex: 1,
-  },
-  textInput: {
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: '#2980b9',
-    padding: 6,
-    alignSelf: 'stretch',
-    marginHorizontal: 15,
-    marginBottom: 4,
-    marginTop: 4,
-  },
-  ListContainer: {
-    flex: 4,
-    flexDirection: 'row',
-  },
-  explanationView: {
-    flex: 2,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  explanationText: {
-    fontSize: 20,
-    color: '#939393',
-    textAlign: 'center',
-  },
-});*/

@@ -39,9 +39,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   explanationText: {
-    margin: 10,
+    marginLeft: 17,
+    fontFamily: 'Roboto',
+    color: '#f5f7fa',
     fontSize: 20,
-    color: '#939393',
     textAlign: 'center',
   },
   explanationTitleText: {
@@ -58,10 +59,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1.5,
     borderColor: '#fff',
     borderRadius: 10,
-  },
-  ListContainer: {
-    flex: 4,
-    flexDirection: 'row',
   },
   //button buttona değil, buttonun parenti olan viewa eklenmeli button style propsuna sahip değil
   //sadece onay olan yerlerde aktif edin
@@ -94,7 +91,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   ListContainer: {
-    flex: 4,
+    flex: 7,
     flexDirection: 'row',
   },
   ItemView: {
@@ -113,9 +110,10 @@ const styles = StyleSheet.create({
     marginLeft: 12,
   },
   ItemExpenseTitle: {
-    flex: 12,
+    fontFamily: 'Roboto',
+    color: '#f5f7fa',
     fontSize: 20,
-    marginLeft: 10,
+    marginLeft: 5,
   },
   ItemExpenseAmount: {
     flex: 5,
@@ -178,6 +176,26 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     resizeMode: 'cover',
     marginBottom: 20,
+  },
+  partnersProfileImageContainerView: {
+    width: 40,
+    height: '100%',
+    justifyContent: 'center',
+    marginLeft: 10,
+  },
+  partnersProfileImage: {
+    width: 40,
+    height: 40,
+    borderBottomRightRadius: 4,
+    borderBottomLeftRadius: 4,
+    borderTopRightRadius: 0.4,
+    borderTopLeftRadius: 4,
+    borderWidth: 0,
+    resizeMode: 'cover',
+    marginBottom: 5,
+  },
+  partnerListView: {
+    flex: 1,
   },
   topBarIcon: {
     fontSize: 30,
@@ -247,6 +265,30 @@ const styles = StyleSheet.create({
     elevation: 24,
     color: '#f5f7fa',
     fontSize: 30,
+  },
+  styleOfAddItem: {
+    position: 'absolute',
+    right: -5,
+    bottom: -5,
+    zIndex: 2,
+    borderRadius: 50,
+    borderWidth: 0,
+    borderColor: '#000',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+    elevation: 24,
+    color: '#f5f7fa',
+    fontSize: 20,
+  },
+  swiper: {
+    width: '100%',
+    backgroundColor: '#fff',
+    flex: 1,
   },
 });
 
